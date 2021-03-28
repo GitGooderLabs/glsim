@@ -124,7 +124,7 @@ server.get("/autogen/:file", async (req, res) => {
     if (!isFileExist) {
       const output = await generateImage(fileName);
       if (output) return res.sendFile(outputFile);
-      return res.send("Design or template file does not exists!");
+      return res.send("Design or template file does not exist!");
     }
 
     res.sendFile(outputFile);
