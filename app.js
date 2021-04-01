@@ -76,7 +76,7 @@ const downloadImage = async (url, fileName) => {
   const buffer = await image.buffer();
   const filePath = root(designFolder(fileName));
   try {
-    if (buffer.length < 15000) return false;
+    if (buffer.length < 7000) return false;
     const isCreated = await createImage(filePath, buffer);
     if (isCreated) return true;
     return false;
