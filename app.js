@@ -122,7 +122,8 @@ server.get("/autogen/:file", async (req, res) => {
   try {
     const isFileExist = await checkIfFileExists(outputFile);
     if (!isFileExist) {
-      const output = await generateImage(fileName);
+/*8      const output = await generateImage(fileName); */
+      const output = await generateImage(`http://www.gooderlabs.com/sims/', fileName);
       if (output) return res.sendFile(outputFile);
       return res.send("OH NO!!!  Something went wrong!!!");
     }
