@@ -5,12 +5,13 @@ const sharp = require("sharp");
 
 /*
 const { URL } = require("url");
+const path = require("path");
 
 Hardcoding the fucking simulation URL because I'm a dipshit
 
 */
-const URL = `http://www.gooderlabs.com/sims/`;
-const path = require("path");
+const { URL } = `http://www.gooderlabs.com/`;
+const path = `sims/`;
 const fs = require("fs");
 const server = express();
 
