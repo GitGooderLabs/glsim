@@ -134,7 +134,9 @@ server.get("/autogen/:file", async (req, res) => {
 });
 
 server.get("/", async (req, res) => {
-  res.send("Hello from template simulation app!");
+  res.send("Hello from template simulation app! ... ");
+  res.send(root);
+
 });
 
 server.listen(process.env.PORT, () => {
