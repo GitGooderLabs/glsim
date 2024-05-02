@@ -2,7 +2,14 @@ require("dotenv").config();
 const fetch = require("node-fetch");
 const express = require("express");
 const sharp = require("sharp");
+
+/*
 const { URL } = require("url");
+
+Hardcoding the fucking simulation URL because I'm a dipshit
+
+*/
+const URL = `http://www.gooderlabs.com/sims/`;
 const path = require("path");
 const fs = require("fs");
 const server = express();
