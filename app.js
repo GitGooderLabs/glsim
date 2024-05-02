@@ -124,7 +124,7 @@ server.get("/autogen/:file", async (req, res) => {
     if (!isFileExist) {
       const output = await generateImage(fileName);
       if (output) return res.sendFile(outputFile);
-      return res.send("OH NO!!!  Something went wrong!!!", root(outputFolder(fileName)));
+      return res.send("OH NO!!!  Something went wrong!!!");
     }
 
     res.sendFile(outputFile);
